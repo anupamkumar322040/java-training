@@ -1,14 +1,14 @@
 public class DoublyLinkedList {
-    Node head = new Node(10);
-    Node curr = head;
+    Node1 head = new Node1(10);
+    Node1 curr = head;
     public void push(int newData)
     {
-        Node newNode = new Node(newData);
-        newNode.prev = head;
-        newNode.next = null;
+        Node1 newNode1 = new Node1(newData);
+        newNode1.prev = head;
+        newNode1.next = null;
         if (head != null)
-            head.next = newNode;
-        head = newNode;
+            head.next = newNode1;
+        head = newNode1;
     }
 
     public void display()
@@ -31,20 +31,20 @@ public class DoublyLinkedList {
     }
 }
 
-class Node{
+class Node1{
     int data;
-    Node prev;
-    Node next;
+    Node1 prev;
+    Node1 next;
 
-    public Node(int data){
+    public Node1(int data){
         this.data = data;
     }
 }
 
 
 /*
-Insert next to given node data
-Insert previous to given node data
-A variation could be first or last node
-Delete a given node
+Insert next to given node1 data
+Insert previous to given node1 data
+A variation could be first or last node1
+Delete a given node1
 */
